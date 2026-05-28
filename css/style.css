@@ -4,14 +4,14 @@
   --green: #0b3436;
   --green2: #0b5557;
   --deep: #041f21;
-  --paper: #e3ddd2;
-  --card: #f5f1ea;
+  --paper: #d8d4cc;
+  --card: #ebe7df;
   --ink: #142f31;
   --muted: #5f7170;
-  --line: #e5d9c5;
+  --line: #c9c3ba;
   --gold: #c8a66e;
   --gold2: #e1c58d;
-  --soft: #dfe7e1;
+  --soft: #d3ddd8;
 }
 * {
   box-sizing: border-box;
@@ -88,7 +88,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(247, 243, 235, 0.94);
+  background: rgba(216, 212, 204, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(6, 59, 61, 0.09);
 }
