@@ -4,8 +4,8 @@
   --green: #0b3436;
   --green2: #0b5557;
   --deep: #041f21;
-  --paper: #d8d4cc;
-  --card: #ebe7df;
+  --paper: #9a9895;
+  --card: #242423;
   --ink: #142f31;
   --muted: #5f7170;
   --line: #c9c3ba;
@@ -150,7 +150,7 @@ header {
   top: 38px;
   right: -180px;
   width: 720px;
-  background: #fff;
+  background: #c7d2d1;
   border: 1px solid var(--line);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.16);
   padding: 22px;
