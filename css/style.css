@@ -1,17 +1,17 @@
 /* Estilos principais - Bicalho & Partners */
 
 :root {
-  --green: #063b3d;
+  --green: #0b3436;
   --green2: #0b5557;
   --deep: #041f21;
-  --paper: #f7f3eb;
-  --card: #fffaf2;
+  --paper: #e3ddd2;
+  --card: #f5f1ea;
   --ink: #142f31;
   --muted: #5f7170;
   --line: #e5d9c5;
   --gold: #c8a66e;
   --gold2: #e1c58d;
-  --soft: #edf3f0;
+  --soft: #dfe7e1;
 }
 * {
   box-sizing: border-box;
