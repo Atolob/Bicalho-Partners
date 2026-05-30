@@ -903,3 +903,42 @@ footer {
     left: 0;
   }
 }
+.top-highlight {
+  background: linear-gradient(135deg, var(--green), #123f42);
+  color: #fff;
+  padding: 34px 0;
+}
+
+.top-highlight-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.highlight-label {
+  display: inline-block;
+  color: var(--gold2);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  margin-bottom: 10px;
+}
+
+.top-highlight h2 {
+  margin: 0 0 8px;
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+}
+
+.top-highlight p {
+  margin: 0;
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+@media (max-width: 760px) {
+  .top-highlight-grid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
