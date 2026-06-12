@@ -942,3 +942,41 @@ footer {
     align-items: flex-start;
   }
 }
+
+.top-highlight {
+  background: var(--green);
+  color: white;
+  padding: 40px 0;
+}
+
+.top-highlight-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.highlight-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--gold);
+}
+
+.top-highlight h2 {
+  margin-bottom: 10px;
+}
+
+.top-highlight p {
+  max-width: 700px;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .top-highlight-grid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
