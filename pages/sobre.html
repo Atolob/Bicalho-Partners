@@ -4,29 +4,103 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quem Somos | Bicalho & Partners</title>
-  <link rel="icon" href="../images/logo/logo-mark-silver.png" />
+  <meta name="description" content="Conheça Filipe Bicalho Tavares, contador e consultor financeiro por trás da Bicalho & Partners." />
+  <link rel="icon" href="../images/logo-mark-silver.png" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/animations.css" />
   <link rel="stylesheet" href="../css/responsive.css" />
 </head>
 <body>
+
+  <!-- HEADER — mesmo do index -->
   <header>
     <div class="container nav">
-      <a class="brand" href="../index.html#inicio">
-        <img src="../images/logo/logo-mark-silver.png" alt="Logo Bicalho & Partners">
-        <div><b>BICALHO & PARTNERS</b><small>Contabilidade estratégica</small></div>
+      <a class="brand" href="../index.html" aria-label="Bicalho & Partners">
+        <img src="../images/logo-mark-silver.png" alt="Logo Bicalho & Partners" />
+        <div>
+          <b>BICALHO & PARTNERS</b>
+          <small>Contabilidade estratégica</small>
+        </div>
       </a>
-      <nav class="menu"><a href="../index.html#servicos">Serviços</a><a href="../index.html#filipe">Quem somos</a><a href="../index.html#contato">Contato</a></nav>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="../index.html">Início</a>
+        <a href="../index.html#servicos">Serviços</a>
+        <a href="../index.html#processo">Como funciona</a>
+        <a href="sobre.html">Quem somos</a>
+        <a href="../index.html#contato">Contato</a>
+      </nav>
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-cta">
+        <a class="btn primary" href="../index.html#contato">Falar agora</a>
+      </div>
     </div>
   </header>
-  <main style="padding:140px 0 80px">
-    <section class="container section-head">
-      <span class="eyebrow">FILIPE BICALHO TAVARES</span>
-      <h1 style="font-size:56px">Contabilidade com visão estratégica</h1>
-      <p>Conheça o perfil profissional por trás da Bicalho & Partners.</p>
-      <a class="btn primary" href="../index.html#contato">Falar com Filipe</a>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="service-hero">
+      <div class="container service-hero-grid">
+        <div>
+          <a class="back-link" href="../index.html">← Voltar</a>
+          <div class="eyebrow">Quem somos</div>
+          <h1 class="serif">Filipe Bicalho Tavares</h1>
+          <p>Contador, consultor financeiro e estrategista empresarial. Fundador da Bicalho & Partners.</p>
+        </div>
+        <div class="service-summary">
+          <img src="../images/logo-mark-silver.png" alt="Bicalho & Partners" />
+          <h3>Bicalho & Partners</h3>
+          <p>Contabilidade estratégica e gestão financeira para empresas que querem crescer com clareza.</p>
+        </div>
+      </div>
     </section>
-  </main>
-  <script src="../js/main.js"></script>
-</body>
-</html>
+
+    <!-- SOBRE -->
+    <section class="about" style="padding: 70px 0;">
+      <div class="container about-grid">
+        <div class="portrait reveal">
+          <img src="../images/filipe-bicalho-tavares.jpg" alt="Filipe Bicalho Tavares" />
+        </div>
+        <div class="reveal">
+          <div class="eyebrow">A história</div>
+          <h2 class="serif">Contabilidade que conversa com o negócio.</h2>
+          <p style="margin-top: 16px;">
+            A Bicalho & Partners nasceu da percepção de que a maioria dos empresários 
+            não entende os próprios números — não por falta de interesse, mas porque 
+            a contabilidade tradicional raramente se comunica de forma clara.
+          </p>
+          <p style="margin-top: 12px;">
+            Filipe Bicalho Tavares construiu uma carreira unindo contabilidade, 
+            gestão financeira e visão estratégica para oferecer algo diferente: 
+            um acompanhamento próximo, com linguagem simples e foco no que realmente 
+            importa para o crescimento do negócio.
+          </p>
+          <div class="badges" style="margin-top: 24px;">
+            <div class="badge">
+              <b>Formação</b>
+              <span>Ciências Contábeis</span>
+            </div>
+            <div class="badge">
+              <b>Especialidade</b>
+              <span>Gestão financeira</span>
+            </div>
+            <div class="badge">
+              <b>Foco</b>
+              <span>PMEs e startups</span>
+            </div>
+          </div>
+          <div class="quote" style="margin-top: 24px;">
+            <p>"Gestão boa começa quando os números deixam de ser surpresa."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="why">
+      <div class="container">
+        <div
