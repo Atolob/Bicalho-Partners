@@ -40,7 +40,7 @@ p {
   line-height: 1.65;
 }
 .container {
-  width: min(1480px, 96vw);
+  width: min(1480px, 92vw);
   margin: auto;
 }
 .serif {
@@ -927,6 +927,7 @@ footer {
       gap: 16px;
       border-bottom: 1px solid var(--line);
       z-index: 40;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     }
     .hamburger.open span:nth-child(1) {
       transform: translateY(7px) rotate(45deg);
