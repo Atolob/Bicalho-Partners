@@ -1024,3 +1024,27 @@ footer {
     align-items: flex-start;
   }
 }
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.top-highlight {
+  width: 100%;
+  overflow: hidden;
+}
+
+.top-highlight-grid {
+  max-width: 1480px;
+  width: min(1480px, 96vw);
+  margin: 0 auto;
+}
+
+.mega {
+  right: 0;
+  left: auto;
+  max-width: min(900px, 92vw);
+  overflow: hidden;
+}
