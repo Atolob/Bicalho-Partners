@@ -897,6 +897,7 @@ footer {
   .service-hero-grid,
   .service-content-grid {
     grid-template-columns: 1fr;
+}
     .hamburger {
       display: flex;
       flex-direction: column;
