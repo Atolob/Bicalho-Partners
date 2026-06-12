@@ -993,10 +993,13 @@ footer {
 }
 
 .top-highlight-grid {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
+    max-width: 1480px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 0 40px;
 }
 
 .highlight-label {
@@ -1048,4 +1051,12 @@ body {
   left: auto;
   max-width: min(900px, 92vw);
   overflow: hidden;
+}
+.top-highlight h2 {
+    margin: 0 0 12px;
+    max-width: 800px;
+}
+
+.top-highlight p {
+    max-width: 700px;
 }
