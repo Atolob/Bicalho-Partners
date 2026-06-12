@@ -963,6 +963,17 @@ footer {
 .mega-wrap.open button::after {
   content: ' ▴';
 }
+.mega-wrap .mega {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  right: auto;
+  left: 0;
+}
+
+.mega-wrap.open .mega {
+  display: grid;
+}
     }
   }
   .service-cta-box {
