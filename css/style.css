@@ -148,7 +148,7 @@ header {
 .mega {
   position: absolute;
   top: 38px;
-  right: -180px;
+  right: 0px;
   width: min(720px, 92vw);
   background: #c7d2d1;
   border: 1px solid var(--line);
