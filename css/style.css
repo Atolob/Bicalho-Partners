@@ -937,6 +937,32 @@ footer {
     }
     .hamburger.open span:nth-child(3) {
       transform: translateY(-7px) rotate(-45deg);
+
+      .mega-wrap .mega {
+  position: static;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+  transform: none;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  border-radius: 12px;
+  margin-top: 8px;
+  box-shadow: none;
+}
+.mega-wrap.open .mega {
+  opacity: 1;
+  visibility: visible;
+  max-height: 600px;
+}
+.mega-wrap button::after {
+  content: ' ▾';
+  font-size: 0.7rem;
+}
+.mega-wrap.open button::after {
+  content: ' ▴';
+}
     }
   }
   .service-cta-box {
