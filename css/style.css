@@ -40,7 +40,7 @@ p {
   line-height: 1.65;
 }
 .container {
-  width: min(1480px, 92vw);
+  width: min(1480px, 90vw);
   margin: auto;
 }
 .serif {
