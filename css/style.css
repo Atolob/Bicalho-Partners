@@ -889,10 +889,53 @@ footer {
   color: #d9e8e5;
   max-width: 680px;
 }
+/* Hambúrguer escondido no desktop */
+.hamburger {
+  display: none;
+}
 @media (max-width: 900px) {
   .service-hero-grid,
   .service-content-grid {
     grid-template-columns: 1fr;
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--green);
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+    .menu.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 72px;
+      left: 0;
+      width: 100%;
+      background: rgba(216, 212, 204, 0.98);
+      padding: 20px;
+      gap: 16px;
+      border-bottom: 1px solid var(--line);
+      z-index: 40;
+    }
+    .hamburger.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
   }
   .service-cta-box {
     display: grid;
