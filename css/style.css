@@ -149,7 +149,8 @@ header {
   position: absolute;
   top: 38px;
   right: 0px;
-  width: min(720px, 92vw);
+  left: auto;
+  width: min(900px, 92vw);
   background: #c7d2d1;
   border: 1px solid var(--line);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.16);
