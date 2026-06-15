@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /components/
+Disallow: /.git/
 
 Sitemap: https://bicalhopartners.com.br/sitemap.xml
