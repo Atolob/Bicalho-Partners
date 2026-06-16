@@ -150,8 +150,8 @@ header {
   top: 38px;
   left: 50%;
   transform: translateX(-50%);
-
-  width: min(880px, 92vw);
+  width: 820px;
+  max-width: 820px;
 
   background: #c7d2d1;
   border: 1px solid var(--line);
@@ -170,7 +170,7 @@ header {
 .mega-wrap:hover .mega {
   opacity: 1;
   visibility: visible;
-  transform: translateX(-50%) translateY(0);
+  transform: translateX(-50%);
 }
 .mega h4 {
   font-size: 0.86rem;
