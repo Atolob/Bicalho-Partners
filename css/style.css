@@ -146,28 +146,34 @@ header {
   position: relative;
 }
 .mega {
-  position: absolute;
-  top: 38px;
-  right: 0px;
-  left: auto;
-  width: min(880px, 92vw);
-  background: #c7d2d1;
-  border: 1px solid var(--line);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.16);
-  padding: 22px;
-  border-radius: 18px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(8px);
-  transition: 0.2s;
+    position: absolute;
+    top: 38px;
+
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+
+    width: min(1100px, 92vw);
+
+    background: #c7d2d1;
+    border: 1px solid var(--line);
+    box-shadow: 0 24px 60px rgba(0,0,0,0.16);
+    padding: 22px;
+    border-radius: 18px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.2s;
 }
 .mega-wrap:hover .mega {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
 }
 .mega h4 {
   font-size: 0.86rem;
