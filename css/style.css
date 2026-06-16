@@ -984,11 +984,10 @@ footer {
     display: grid;
   }
   .services-mega {
-    width: 92vw;
+    width: 820px;
     right: auto;
     left: 0;
   }
-}
 .top-highlight {
   background: linear-gradient(135deg, var(--green), #123f42);
   color: #fff;
