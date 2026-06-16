@@ -148,8 +148,8 @@ header {
 .mega {
   position: absolute;
   top: 38px;
-  left: auto;
-  right: -150px;
+  left: 50vw;
+  right: auto;
 
   width: min(880px, 92vw);
 
@@ -171,7 +171,7 @@ header {
 .mega-wrap:hover .mega {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translatex(-50%);
 }
 .mega h4 {
   font-size: 0.86rem;
@@ -1282,4 +1282,3 @@ body {
   .jstage-num { font-size: 3.5rem; }
 }
 /* ===== FIM JORNADA ===== */
-
