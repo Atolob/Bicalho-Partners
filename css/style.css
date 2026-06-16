@@ -148,8 +148,8 @@ header {
 .mega {
   position: absolute;
   top: 38px;
-  left: 50%;
-  right: 50%;
+  left: auto;
+  right: -150px;
 
   width: min(880px, 92vw);
 
