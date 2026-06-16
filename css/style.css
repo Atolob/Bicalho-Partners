@@ -87,7 +87,7 @@ p {
 header {
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 50;
   background: rgba(216, 212, 204, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(6, 59, 61, 0.09);
@@ -149,7 +149,7 @@ header {
   position: absolute;
   top: 38px;
   left: 50%;
-  right: auto;
+  transform: translateX(-50%);
 
   width: min(880px, 92vw);
 
@@ -165,14 +165,12 @@ header {
 
   opacity: 0;
   visibility: hidden;
-  transform: translateY(8px);
   transition: 0.2s;
 }
 .mega-wrap:hover .mega {
   opacity: 1;
   visibility: visible;
-  transform: translatex(-50%);
-  transform: translatey(0);
+  transform: translateX(-50%) translateY(0);
 }
 .mega h4 {
   font-size: 0.86rem;
