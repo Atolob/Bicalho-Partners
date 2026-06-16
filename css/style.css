@@ -148,7 +148,7 @@ header {
 .mega {
   position: absolute;
   top: 38px;
-  left: 50vw;
+  left: 50%;
   right: auto;
 
   width: min(880px, 92vw);
@@ -172,6 +172,7 @@ header {
   opacity: 1;
   visibility: visible;
   transform: translatex(-50%);
+  transform: translatey(0);
 }
 .mega h4 {
   font-size: 0.86rem;
