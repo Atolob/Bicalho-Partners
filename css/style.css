@@ -1048,13 +1048,6 @@ body {
   width: min(1480px, 96vw);
   margin: 0 auto;
 }
-
-.mega {
-  right: 0;
-  left: auto;
-  max-width: min(900px, 92vw);
-  overflow: hidden;
-}
 .top-highlight h2 {
     margin: 0 0 12px;
     max-width: 800px;
