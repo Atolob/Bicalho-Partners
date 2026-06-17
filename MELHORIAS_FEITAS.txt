@@ -1,0 +1,17 @@
+MELHORIAS FEITAS NO SITE - BICALHO & PARTNERS
+
+1. Corrigido o head da página pages/servicos.html.
+2. Padronizado o Google Analytics dentro do <head> das páginas HTML.
+3. Adicionadas tags canonical e og:url para melhorar SEO e compartilhamento.
+4. Adicionado Schema.org de AccountingService/LocalBusiness na página inicial.
+5. Adicionado FAQ Schema na página inicial para ajudar o Google a entender as dúvidas frequentes.
+6. Criadas novas páginas de SEO:
+   - pages/contabilidade-para-mei.html
+   - pages/imposto-de-renda.html
+   - pages/contabilidade-em-contagem.html
+7. Adicionada seção de atendimento local e online na página inicial.
+8. Melhorado o botão flutuante do WhatsApp.
+9. Atualizado o sitemap.xml com todas as páginas HTML.
+10. Mantido robots.txt apontando para o sitemap.
+
+Depois de subir na Vercel, reenvie o sitemap no Search Console e solicite indexação das páginas novas.

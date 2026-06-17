@@ -1273,3 +1273,28 @@ body {
   .jstage-num { font-size: 3.5rem; }
 }
 /* ===== FIM JORNADA ===== */
+
+
+/* ===== SEO BLOCK / CTA WHATSAPP MELHORADO ===== */
+.seo-block {
+  padding: 74px 0;
+  background: rgba(255, 255, 255, 0.18);
+}
+.seo-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.whatsapp {
+  background: linear-gradient(135deg, #0b5557, #0b3436);
+  padding: 14px 20px;
+}
+.whatsapp::before {
+  content: "☏";
+  margin-right: 8px;
+}
+@media (max-width: 900px) {
+  .seo-cards { grid-template-columns: 1fr; }
+  .whatsapp { right: 14px; bottom: 14px; font-size: .78rem; padding: 12px 15px; }
+}
+/* ===== FIM SEO BLOCK ===== */
