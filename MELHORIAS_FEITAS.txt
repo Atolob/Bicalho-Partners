@@ -15,3 +15,29 @@ MELHORIAS FEITAS NO SITE - BICALHO & PARTNERS
 10. Mantido robots.txt apontando para o sitemap.
 
 Depois de subir na Vercel, reenvie o sitemap no Search Console e solicite indexação das páginas novas.
+
+
+NOVAS MELHORIAS APLICADAS AGORA
+
+11. Criada a página pages/duvidas-frequentes.html com FAQ completo.
+12. Adicionado FAQ Schema na nova página de dúvidas.
+13. Adicionada seção de prova social/confiança na página inicial.
+14. Adicionado botão na FAQ da home levando para a página completa de dúvidas.
+15. Refeita a página pages/contato.html com formulário que monta mensagem automática para WhatsApp.
+16. Adicionadas metas de SEO e Open Graph melhores na página de contato.
+17. Adicionados estilos novos no CSS para prova social, formulário, FAQ e contato.
+18. Atualizado sitemap.xml com a página de dúvidas frequentes.
+19. Criado GUIA_GOOGLE_MEU_NEGOCIO.txt explicando para que serve e como preencher.
+
+COMANDOS PARA SUBIR
+
+git add .
+git commit -m "Adiciona melhorias de SEO, FAQ e contato"
+git push
+
+
+Atualização adicional:
+- A seção da Reforma Tributária na página inicial foi reorganizada.
+- Textos foram reescritos para ficar mais profissional.
+- Foram adicionados blocos de Caixa, Fiscal, Planejamento e Segurança.
+- CSS responsivo novo para a seção da Reforma Tributária.
