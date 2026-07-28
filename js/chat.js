@@ -168,7 +168,7 @@
       const res = await fetch(WEBHOOK, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ human_message: texto, sessionId }),
+        body: JSON.stringify({ human_message: texto, chat_id: sessionId }),
       });
 
       if (!res.ok) throw new Error("Erro " + res.status);
