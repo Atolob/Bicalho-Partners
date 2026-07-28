@@ -179,6 +179,7 @@
       // Aceita { output }, { response }, { text }, ou string direta
       const resposta =
         (typeof data === "string" ? data : null) ||
+        data.reply ||
         data.output ||
         data.response ||
         data.text ||
