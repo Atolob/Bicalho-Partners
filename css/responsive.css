@@ -1,0 +1,10 @@
+/* Ajustes responsivos */
+
+@media (max-width: 720px){
+  .container{width:min(100% - 28px, var(--max));}
+  .hero{padding-top:104px;}
+  .hero-grid,.split,.contact-grid{grid-template-columns:1fr;}
+  .menu{display:none;}
+  .nav-cta{display:none;}
+  h1{font-size:38px;}
+}

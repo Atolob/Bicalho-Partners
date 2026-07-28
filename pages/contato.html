@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BH6ECK2H9L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BH6ECK2H9L');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Bicalho & Partners</title>
+    <meta name="description" content="Fale com a Bicalho & Partners pelo WhatsApp ou e-mail para atendimento contábil, financeiro, tributário e empresarial." />
+    <link rel="canonical" href="https://bicalhopartners.com.br/pages/contato.html" />
+    <meta property="og:title" content="Contato | Bicalho & Partners" />
+    <meta property="og:description" content="Converse com Filipe Bicalho sobre contabilidade, BPO financeiro, abertura de empresa e planejamento tributário." />
+    <meta property="og:url" content="https://bicalhopartners.com.br/pages/contato.html" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="../images/logo/logo-mark-silver.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="../index.html#inicio"><img src="../images/logo/logo-mark-silver.png" alt="Logo Bicalho & Partners" /><div><b>BICALHO & PARTNERS</b><small>Contabilidade estratégica</small></div></a>
+        <nav class="menu"><a href="../index.html#inicio">Início</a><a href="servicos.html">Serviços</a><a href="sobre.html">Quem somos</a><a href="duvidas-frequentes.html">Dúvidas</a></nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="service-hero">
+        <div class="container">
+          <div class="eyebrow">Contato</div>
+          <h1 class="serif">Fale com a Bicalho & Partners.</h1>
+          <p>Preencha os dados abaixo para abrir uma mensagem pronta no WhatsApp ou fale direto por e-mail.</p>
+        </div>
+      </section>
+
+      <section class="contact-page-section">
+        <div class="container contact-page-grid">
+          <form class="lead-form reveal" id="leadForm">
+            <label>Nome
+              <input type="text" id="leadNome" placeholder="Seu nome" required />
+            </label>
+            <label>Telefone
+              <input type="tel" id="leadTelefone" placeholder="(31) 99999-9999" />
+            </label>
+            <label>Serviço desejado
+              <select id="leadServico">
+                <option>Abertura de empresa</option>
+                <option>Troca de contador</option>
+                <option>Contabilidade completa</option>
+                <option>BPO financeiro</option>
+                <option>Planejamento tributário</option>
+                <option>Imposto de renda</option>
+                <option>MEI</option>
+                <option>Outro assunto</option>
+              </select>
+            </label>
+            <label>Mensagem
+              <textarea id="leadMensagem" rows="5" placeholder="Explique rapidamente o que você precisa"></textarea>
+            </label>
+            <button class="btn primary" type="submit">Enviar pelo WhatsApp</button>
+            <p class="form-note">O formulário não salva dados no site. Ele apenas monta a mensagem e abre o WhatsApp.</p>
+          </form>
+
+          <aside class="contact-side reveal">
+            <h2 class="serif">Atendimento direto</h2>
+            <p>Use os canais abaixo para iniciar uma conversa sobre sua empresa.</p>
+            <a class="contact-row" href="mailto:contato@bicalhopartners.com.br"><span class="icon">✉</span><div><b>E-mail</b><span>contato@bicalhopartners.com.br</span></div></a>
+            <a class="contact-row" target="_blank" rel="noreferrer" href="https://wa.me/5531972599204?text=Ol%C3%A1%20Filipe!%20Vim%20pelo%20site%20da%20Bicalho%20%26%20Partners."><span class="icon">☏</span><div><b>WhatsApp</b><span>Falar com Filipe</span></div></a>
+            <a class="contact-row" href="duvidas-frequentes.html"><span class="icon">?</span><div><b>Dúvidas frequentes</b><span>Ver respostas rápidas</span></div></a>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-pro">
+        <div class="footer-about"><div class="footer-brand"><img src="../images/logo/logo-mark-silver.png" alt="Logo Bicalho & Partners" /><b>BICALHO & PARTNERS</b></div><p>Contabilidade estratégica, gestão financeira e planejamento tributário para empresas.</p></div>
+        <div class="footer-links"><h4>Links</h4><a href="servicos.html">Serviços</a><a href="conteudos.html">Conteúdos</a><a href="duvidas-frequentes.html">Dúvidas frequentes</a></div>
+        <div class="footer-links"><h4>Contato</h4><a href="mailto:contato@bicalhopartners.com.br">contato@bicalhopartners.com.br</a><a href="https://wa.me/5531972599204" target="_blank" rel="noreferrer">WhatsApp</a><span>Contagem - MG • Atendimento online</span></div>
+      </div>
+    </footer>
+
+    <a class="whatsapp" href="https://wa.me/5531972599204" target="_blank" rel="noreferrer">Falar no WhatsApp</a>
+    <script>
+      document.getElementById('leadForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const nome = document.getElementById('leadNome').value.trim();
+        const telefone = document.getElementById('leadTelefone').value.trim();
+        const servico = document.getElementById('leadServico').value;
+        const mensagem = document.getElementById('leadMensagem').value.trim();
+        const texto = `Olá Filipe! Vim pelo site da Bicalho & Partners.%0A%0ANome: ${encodeURIComponent(nome)}%0ATelefone: ${encodeURIComponent(telefone || 'Não informado')}%0AServiço: ${encodeURIComponent(servico)}%0AMensagem: ${encodeURIComponent(mensagem || 'Quero entender melhor o atendimento.')}`;
+        window.open(`https://wa.me/5531972599204?text=${texto}`, '_blank');
+      });
+    </script>
+    <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/chat.js"></script>
+</body>
+</html>
