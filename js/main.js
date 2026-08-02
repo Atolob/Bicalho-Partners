@@ -1,3 +1,6 @@
 // Scripts principais - Bicalho & Partners
 
-document.getElementById('year').textContent = new Date().getFullYear();
+// Atualiza ano no footer
+document.querySelectorAll('#year').forEach(function(el) {
+  el.textContent = new Date().getFullYear();
+});

@@ -227,6 +227,7 @@
       </section>
 
       <section class="hero">
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
         <div class="container hero-grid">
           <div class="hero-card">
             <div class="eyebrow hero-animate-1">Contabilidade estratégica</div>
@@ -357,7 +358,7 @@
 
       <section class="reforma">
         <div class="container">
-          <div class="section-head">
+          <div class="section-head reveal">
             <div>
               <div class="eyebrow">EM DESTAQUE</div>
               <h2 class="serif">
@@ -633,7 +634,8 @@
       </section>
 
       <section class="why" id="porque-escolher">
-        <div class="container">
+        <canvas id="why-canvas" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:0.35;z-index:0;"></canvas>
+        <div class="container" style="position:relative;z-index:1;">
           <div class="section-head reveal">
             <div>
               <div class="eyebrow">Por que escolher</div>
@@ -1421,5 +1423,6 @@
     <script src="./js/main.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/animations.js"></script>
+    <script src="./js/chat.js"></script>
   </body>
 </html>
