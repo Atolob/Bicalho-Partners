@@ -1,3 +1,377 @@
-/* Animações do site */
+/* ===== ANIMAÇÕES BICALHO & PARTNERS — v2 ===== */
 
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+/* ---------- SPLASH SCREEN ---------- */
+#splash {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #041f21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 18px;
+  pointer-events: none;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+#splash.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+.splash-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  animation: splashIn 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.splash-logo img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 28px rgba(200, 166, 110, 0.55));
+}
+.splash-wordmark {
+  text-align: center;
+}
+.splash-wordmark b {
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.22em;
+  font-weight: 800;
+}
+.splash-wordmark small {
+  color: rgba(255,255,255,0.5);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+}
+.splash-line {
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c8a66e, transparent);
+  animation: splashLine 0.8s 0.5s cubic-bezier(0.22,1,0.36,1) forwards;
+}
+
+@keyframes splashIn {
+  from { opacity: 0; transform: scale(0.92) translateY(10px); }
+  to   { opacity: 1; transform: scale(1)    translateY(0); }
+}
+@keyframes splashLine {
+  to { width: 180px; }
+}
+
+/* ---------- SCROLL REVEAL ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1),
+              transform 0.65s cubic-bezier(0.22,1,0.36,1);
+  will-change: opacity, transform;
+}
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-28px);
+  transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1),
+              transform 0.65s cubic-bezier(0.22,1,0.36,1);
+  will-change: opacity, transform;
+}
+.reveal-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.reveal-right {
+  opacity: 0;
+  transform: translateX(28px);
+  transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1),
+              transform 0.65s cubic-bezier(0.22,1,0.36,1);
+  will-change: opacity, transform;
+}
+.reveal-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.96);
+  transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1),
+              transform 0.65s cubic-bezier(0.22,1,0.36,1);
+  will-change: opacity, transform;
+}
+.reveal-scale.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ---------- HERO ANIMADO ---------- */
+.hero-animate-1 { animation: heroFadeUp 0.75s 0.15s cubic-bezier(0.22,1,0.36,1) both; }
+.hero-animate-2 { animation: heroFadeUp 0.75s 0.28s cubic-bezier(0.22,1,0.36,1) both; }
+.hero-animate-3 { animation: heroFadeUp 0.75s 0.42s cubic-bezier(0.22,1,0.36,1) both; }
+.hero-animate-4 { animation: heroFadeUp 0.75s 0.56s cubic-bezier(0.22,1,0.36,1) both; }
+.hero-animate-5 { animation: heroFadeUp 0.75s 0.70s cubic-bezier(0.22,1,0.36,1) both; }
+.hero-visual-animate { animation: heroSlideLeft 0.9s 0.35s cubic-bezier(0.22,1,0.36,1) both; }
+
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes heroSlideLeft {
+  from { opacity: 0; transform: translateX(32px) scale(0.97); }
+  to   { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+/* ---------- TOP HIGHLIGHT ANIMATE ---------- */
+.hl-animate-1 { animation: heroFadeUp 0.75s 0.1s cubic-bezier(0.22,1,0.36,1) both; }
+.hl-animate-2 { animation: heroFadeUp 0.75s 0.25s cubic-bezier(0.22,1,0.36,1) both; }
+.hl-animate-3 { animation: heroFadeUp 0.75s 0.38s cubic-bezier(0.22,1,0.36,1) both; }
+.hl-animate-4 { animation: heroFadeUp 0.75s 0.5s  cubic-bezier(0.22,1,0.36,1) both; }
+.hl-panel-animate { animation: heroSlideLeft 0.85s 0.3s cubic-bezier(0.22,1,0.36,1) both; }
+
+/* ---------- NAVBAR SCROLL ---------- */
+header {
+  transition: background 0.35s ease,
+              box-shadow 0.35s ease,
+              backdrop-filter 0.35s ease;
+}
+header.scrolled {
+  background: rgba(210, 206, 198, 0.97) !important;
+  box-shadow: 0 6px 32px rgba(6,59,61,0.11);
+  backdrop-filter: blur(20px);
+}
+
+/* ---------- BOTÕES PREMIUM ---------- */
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.18s cubic-bezier(0.22,1,0.36,1),
+              box-shadow 0.18s cubic-bezier(0.22,1,0.36,1),
+              background 0.18s ease !important;
+}
+.btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0);
+  transition: background 0.18s ease;
+  border-radius: inherit;
+}
+.btn:hover {
+  transform: translateY(-3px) scale(1.018) !important;
+  box-shadow: 0 12px 32px rgba(6,59,61,0.18);
+}
+.btn:hover::after {
+  background: rgba(255,255,255,0.07);
+}
+.btn:active {
+  transform: translateY(0) scale(0.975) !important;
+  box-shadow: 0 3px 10px rgba(6,59,61,0.12);
+  transition-duration: 0.08s !important;
+}
+.btn.primary:hover {
+  box-shadow: 0 14px 36px rgba(11,52,54,0.28);
+}
+.btn.gold:hover {
+  box-shadow: 0 14px 36px rgba(200,166,110,0.35);
+}
+
+/* ---------- CARDS PREMIUM ---------- */
+.card {
+  transition: transform 0.28s cubic-bezier(0.22,1,0.36,1),
+              box-shadow 0.28s cubic-bezier(0.22,1,0.36,1),
+              border-color 0.28s ease !important;
+}
+.card:hover {
+  transform: translateY(-7px) scale(1.012) !important;
+  box-shadow: 0 24px 56px rgba(6,59,61,0.13) !important;
+  border-color: #c9ad79 !important;
+}
+.why-card {
+  transition: transform 0.28s cubic-bezier(0.22,1,0.36,1),
+              box-shadow 0.28s cubic-bezier(0.22,1,0.36,1),
+              background 0.28s ease;
+}
+.why-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.09);
+  box-shadow: 0 18px 42px rgba(0,0,0,0.22);
+}
+.stat {
+  transition: transform 0.28s cubic-bezier(0.22,1,0.36,1),
+              box-shadow 0.28s cubic-bezier(0.22,1,0.36,1);
+}
+.stat:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(6,59,61,0.1);
+}
+.contact-row {
+  transition: transform 0.22s ease, background 0.22s ease;
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 -10px;
+}
+.contact-row:hover {
+  transform: translateX(5px);
+  background: rgba(255,255,255,0.06);
+}
+.step {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.step:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(6,59,61,0.09);
+}
+.faq-item {
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.faq-item:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------- WHATSAPP PULSE ---------- */
+.whatsapp {
+  animation: waPulse 3s 2s ease-in-out infinite;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.whatsapp:hover {
+  transform: scale(1.06) translateY(-2px);
+  box-shadow: 0 20px 48px rgba(0,0,0,0.3);
+  animation: none;
+}
+@keyframes waPulse {
+  0%, 100% { box-shadow: 0 18px 40px rgba(0,0,0,0.22); }
+  50%       { box-shadow: 0 18px 48px rgba(11,85,87,0.45); }
+}
+
+/* ---------- BAR PROGRESS ANIMATION ---------- */
+.bar i {
+  transform-origin: left;
+  animation: barGrow 1.2s 0.8s cubic-bezier(0.22,1,0.36,1) both;
+}
+@keyframes barGrow {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* ---------- FLOATING PANEL SUBTLE FLOAT ---------- */
+.floating-panel {
+  animation: floatPanel 6s ease-in-out infinite;
+}
+@keyframes floatPanel {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-7px); }
+}
+
+/* ---------- LINK HOVER ---------- */
+.link {
+  position: relative;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #8a632b;
+  transition: width 0.25s ease;
+}
+.link:hover {
+  transform: translateX(4px);
+  color: #6a4c20;
+}
+.link:hover::after { width: 100%; }
+
+/* ---------- SUBTLE BG GLOW ---------- */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -80px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(11,85,87,0.08) 0%, transparent 70%);
+  pointer-events: none;
+  border-radius: 50%;
+}
+.hero { position: relative; overflow: hidden; }
+
+/* ---------- SECTION BG DEPTH ---------- */
+.why::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse at 80% 20%, rgba(200,166,110,0.06) 0%, transparent 55%),
+              radial-gradient(ellipse at 10% 80%, rgba(11,85,87,0.12) 0%, transparent 50%);
+  pointer-events: none;
+}
+.why { position: relative; overflow: hidden; }
+
+.top-highlight-pro::before {
+  content: '';
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(200,166,110,0.12) 0%, transparent 65%);
+  pointer-events: none;
+  border-radius: 50%;
+}
+.top-highlight-pro { position: relative; overflow: hidden; }
+
+/* ---------- MEGA MENU ANIMATION ---------- */
+.mega {
+  transform: translateX(-50%) translateY(8px) !important;
+  transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease !important;
+}
+.mega-wrap:hover .mega {
+  transform: translateX(-50%) translateY(0) !important;
+}
+
+/* ---------- HAMBURGER ANIMATION ---------- */
+.hamburger span {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+/* ---------- TRUST STRIP ---------- */
+.trust-strip-grid > div {
+  transition: transform 0.22s ease;
+}
+.trust-strip-grid > div:hover {
+  transform: translateY(-3px);
+}
+
+/* ---------- ARTICLE HOVER ---------- */
+.article-main, .article-list a {
+  transition: transform 0.25s cubic-bezier(0.22,1,0.36,1),
+              box-shadow 0.25s ease !important;
+}
+.article-main:hover, .article-list a:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 18px 44px rgba(6,59,61,0.1) !important;
+}
+
+/* ---------- BADGE HOVER ---------- */
+.badge {
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(6,59,61,0.09);
+}
+
+/* ---------- PORTRAIT DEPTH ---------- */
+.portrait {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.portrait:hover {
+  transform: scale(1.012);
+  box-shadow: 0 28px 64px rgba(6,59,61,0.16) !important;
+}
