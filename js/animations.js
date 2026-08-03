@@ -38,9 +38,9 @@
 
   /* Paleta alinhada ao tema: verde-escuro e dourado */
   var COLORS = [
-    'rgba(11,85,87,',
-    'rgba(200,166,110,',
-    'rgba(6,59,61,',
+    'rgba(26,90,94,',
+    'rgba(212,165,116,',
+    'rgba(13,44,46,',
     'rgba(225,197,141,',
   ];
 
@@ -285,7 +285,7 @@
           ctx.beginPath();
           ctx.moveTo(nodes[a].x, nodes[a].y);
           ctx.lineTo(nodes[b].x, nodes[b].y);
-          ctx.strokeStyle = 'rgba(200,166,110,' + alpha + ')';
+          ctx.strokeStyle = 'rgba(212,165,116,' + alpha + ')';
           ctx.lineWidth = 0.8;
           ctx.stroke();
         }
@@ -295,7 +295,7 @@
     nodes.forEach(function (n) {
       ctx.beginPath();
       ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(200,166,110,0.25)';
+      ctx.fillStyle = 'rgba(212,165,116,0.25)';
       ctx.fill();
     });
     requestAnimationFrame(loop);
