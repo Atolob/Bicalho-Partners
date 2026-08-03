@@ -1,78 +1,205 @@
-/* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVE — Bicalho & Partners v2 ===== */
 
+/* ---------- HAMBURGER BUTTON ---------- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+.hamburger:hover {
+  background: rgba(6,59,61,0.07);
+}
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--green);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* ---------- MOBILE MENU ---------- */
 @media (max-width: 900px) {
-  .menu {
-    display: none;
-  }
-  .nav-cta {
-    display: none;
-  }
   .hamburger {
-    display: flex !important;
+    display: flex;
   }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2.2rem !important;
-  }
-
-  .hero-grid {
-    grid-template-columns: 1fr !important;
-    gap: 40px;
-  }
-
-  .hero-visual {
-    min-height: 300px !important;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .section-head h2 {
-    font-size: 1.8rem !important;
-  }
-
   .nav-cta {
     display: none;
   }
-
-  .hero-actions {
+  .nav {
+    height: auto;
+    padding: 13px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .menu {
+    display: none;
     flex-direction: column;
+    width: 100%;
+    background: rgba(218, 214, 206, 0.98);
+    backdrop-filter: blur(16px);
+    border-top: 1px solid rgba(6,59,61,0.09);
+    padding: 14px 0 20px;
+    gap: 2px;
+    animation: menuSlide 0.28s cubic-bezier(0.22,1,0.36,1);
+  }
+  .menu.open {
+    display: flex;
+  }
+  .menu > a,
+  .menu button {
+    padding: 11px 16px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    text-align: left;
+    width: 100%;
+  }
+  .menu > a:hover,
+  .menu button:hover {
+    background: rgba(6,59,61,0.06);
+  }
+  .mega-wrap {
+    width: 100%;
+  }
+  .mega {
+    position: static !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: none;
+    grid-template-columns: 1fr !important;
+    border-radius: 12px;
+    margin: 6px 0 0;
+    box-shadow: none;
+    background: rgba(200, 196, 188, 0.6) !important;
+  }
+  .mega-wrap.open .mega {
+    display: grid;
+  }
+  .mega-wrap:hover .mega {
+    transform: none !important;
   }
 
-  .btn {
-    width: 100%;
+  /* Hero */
+  .hero {
+    padding: 34px 0;
+  }
+  .hero-grid,
+  .section-head,
+  .process-grid,
+  .about-grid,
+  .article-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-card {
+    padding: 26px;
+  }
+  .hero-visual {
+    min-height: 360px;
+  }
+  .trust-row,
+  .compact-grid,
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .badges {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    display: grid;
+  }
+  .whatsapp {
+    font-size: 0.78rem;
+    right: 14px;
+    bottom: 14px;
+  }
+  .section-head {
+    gap: 12px;
+  }
+  section {
+    padding: 54px 0;
+  }
+  .seo-cards {
+    grid-template-columns: 1fr;
+  }
+  .proof-grid,
+  .contact-page-grid,
+  .faq-grid-wide {
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.8rem !important;
+@media (max-width: 560px) {
+  .brand b {
+    font-size: 0.75rem;
   }
-
-  .hero {
-    padding: 60px 0 !important;
+  .brand small {
+    display: none;
   }
-
-  section {
-    padding: 60px 0 !important;
+  .trust-row,
+  .compact-grid,
+  .mini-grid,
+  .why-grid {
+    grid-template-columns: 1fr;
   }
-
-  .section-head h2 {
-    font-size: 1.5rem !important;
+  .hero h1 {
+    font-size: 2.35rem;
   }
-
-  .container {
-    padding: 0 16px !important;
-  }
-
   .hero-actions {
-    flex-direction: column;
+    display: grid;
   }
-
   .btn {
     width: 100%;
+    justify-content: center;
+  }
+  .hero-visual {
+    min-height: 300px;
+  }
+  .contact-row {
+    align-items: flex-start;
+  }
+  .footer-grid {
+    font-size: 0.85rem;
+  }
+  .floating-panel {
+    animation: none !important;
+  }
+}
+
+@keyframes menuSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- DESKTOP MENU (make sure it shows) ---------- */
+@media (min-width: 901px) {
+  .hamburger {
+    display: none !important;
+  }
+  .menu {
+    display: flex !important;
+    flex-direction: row;
+  }
+  .nav-cta {
+    display: flex !important;
   }
 }
